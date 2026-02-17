@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サービス・料金 | あおば税理士事務所</title>
+    <meta name="description" content="あおば税理士事務所のサービスと料金一覧。顧問契約、確定申告、会社設立サポートなど。明朗会計で安心。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            background-color: var(--color-main);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 2rem;
+            border-top: 4px solid var(--color-accent);
+        }
+
+        .price-tag {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-main);
+            margin: 1rem 0;
+            display: flex;
+            align-items: baseline;
+            gap: 5px;
+        }
+
+        .price-sub {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--color-text-light);
+        }
+
+        .service-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .service-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--color-border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-list li:last-child {
+            border-bottom: none;
+        }
+
+        .service-icon {
+            color: var(--color-accent);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container container">
+            <a href="index.html" class="logo">
+                <i class="ph ph-plant" style="color: var(--color-accent); font-size: 1.8rem;"></i>
+                あおば税理士事務所
+            </a>
+
+            <button class="menu-toggle" aria-label="メニューを開く">
+                <i class="ph ph-list"></i>
+            </button>
+
+            <nav class="nav-menu">
+                <ul style="display: flex; gap: 30px; align-items: center;">
+                    <li><a href="index.html" class="nav-link">ホーム</a></li>
+                    <li><a href="service.html" class="nav-link active" style="color: var(--color-accent);">サービス・料金</a>
+                    </li>
+                    <li><a href="about.html" class="nav-link">事務所紹介</a></li>
+                    <li><a href="voice.html" class="nav-link">お客様の声</a></li>
+                    <li><a href="contact.html" class="nav-link">お問い合わせ</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">無料相談はこちら</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <header class="page-header">
+            <div class="container fade-in-up">
+                <h1 class="section-title" style="color: white; margin-bottom: 1rem;">Service & Price</h1>
+                <p>サービス・料金</p>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: 3rem;">
+                    <p>お客様の状況やニーズに合わせて、最適なプランをご提案します。<br>
+                        初回相談は無料ですので、お気軽にお問い合わせください。</p>
+                </div>
+
+                <!-- 1. 法人顧問 -->
+                <div class="service-card fade-in-up" id="corporate">
+                    <div
+                        style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; margin-bottom: 1rem;">
+                        <h2 style="font-size: 1.8rem;">顧問契約サービス（法人向け）</h2>
+                        <span
+                            style="background: var(--color-base); padding: 5px 10px; border-radius: 4px; font-size: 0.9rem;">人気No.1</span>
+                    </div>
+
+                    <p style="margin-bottom: 1.5rem;">毎月の巡回監査から決算申告まで、税務・会計をトータルサポート。経営に専念できる環境を整えます。</p>
+
+                    <div class="price-tag">
+                        月額 33,000円〜 <span class="price-sub">（税込） / 年間目安 50万円〜</span>
+                    </div>
+
+                    <ul class="service-list">
+                        <li><i class="ph-fill ph-check-circle service-icon"></i> 月次訪問またはオンライン面談（回数は応相談）</li>
+                        <li><i class="ph-fill ph-check-circle service-icon"></i> 記帳チェック・指導</li>
+                        <li><i class="ph-fill ph-check-circle service-icon"></i> 税務相談（チャット・電話・メール無制限）</li>
+                        <li><i class="ph-fill ph-check-circle service-icon"></i> 決算書作成・法人税申告書作成</li>
+                        <li><i class="ph-fill ph-check-circle service-icon"></i> 節税対策のご提案</li>
+                    </ul>
+
+                    <div
+                        style="margin-top: 1.5rem; background: #fff8e1; padding: 1rem; border-radius: var(--radius-sm);">
+                        <p style="font-size: 0.9rem;"><strong>補足:</strong>
+                            会社の規模（売上高、従業員数）やご訪問頻度に応じてプランをカスタマイズします。記帳代行（領収書丸投げ）も月額＋11,000円〜で承ります。</p>
+                    </div>
+                </div>
+
+                <!-- 2. 個人事業主 -->
+                <div class="service-card fade-in-up" id="individual">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">確定申告サポート（個人事業主向け）</h2>
+                    <p style="margin-bottom: 1.5rem;">面倒な帳簿付けから解放。正確な申告で、無駄な税金を払わないように対策します。</p>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                        <div style="background: var(--color-base); padding: 1.5rem; border-radius: var(--radius-sm);">
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">確定申告のみプラン</h3>
+                            <div class="price-tag">110,000円〜 <span class="price-sub">（税込）</span></div>
+                            <p style="font-size: 0.9rem;">年に1回、領収書や通帳のコピーをお預かりして申告書を作成します。</p>
+                        </div>
+                        <div style="background: var(--color-base); padding: 1.5rem; border-radius: var(--radius-sm);">
+                            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">月次顧問プラン</h3>
+                            <div class="price-tag">月額 11,000円〜 <span class="price-sub">（税込）</span></div>
+                            <p style="font-size: 0.9rem;">毎月のチェックで、期中の節税対策もしっかり行いたい方向け。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. 起業支援 -->
+                <div class="service-card fade-in-up" id="startup">
+                    <div
+                        style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; margin-bottom: 1rem;">
+                        <h2 style="font-size: 1.8rem;">会社設立・起業サポート</h2>
+                        <span
+                            style="background: var(--color-accent); color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.9rem;">初年度顧問料
+                            半額特典あり</span>
+                    </div>
+
+                    <p style="margin-bottom: 1.5rem;">法人化のメリット・デメリット診断から、設立手続き、創業融資までワンストップで支援します。</p>
+
+                    <div class="price-tag">
+                        設立手数料 0円 <span class="price-sub">（顧問契約をいただく場合）</span>
+                    </div>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;">※ 法定費用（約20万円〜）は実費のみご負担いただきます。</p>
+
+                    <ul class="service-list">
+                        <li><i class="ph-fill ph-check-circle service-icon"></i> 法人形態のアドバイス（株式会社 vs 合同会社）</li>
+                        <li><i class="ph-fill ph-check-circle service-icon"></i> 定款作成・認証の代行（司法書士と連携）</li>
+                        <li><i class="ph-fill ph-check-circle service-icon"></i> 税務署等への各種届出作成</li>
+                        <li><i class="ph-fill ph-check-circle service-icon"></i> 創業融資の事業計画書作成サポート</li>
+                    </ul>
+                </div>
+
+                <div class="text-center" style="margin-top: 4rem;">
+                    <h3 style="margin-bottom: 1.5rem;">どのプランが良いか迷われている方へ</h3>
+                    <p style="margin-bottom: 2rem;">「自分の場合はいくらになるの？」<br>「法人化すべきか相談したい」<br>そんな疑問に無料でお答えします。</p>
+                    <a href="contact.html" class="btn btn-primary"
+                        style="padding: 16px 40px; font-size: 1.1rem;">料金の見積もりを相談する（無料）</a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="logo" style="color: white; margin-bottom: 1rem;">
+                        <i class="ph ph-plant" style="font-size: 1.5rem; color: var(--color-accent);"></i>
+                        あおば税理士事務所
+                    </div>
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1rem;">
+                        〒173-0000<br>
+                        東京都新宿区○○1-2-3 ○○ビル2F<br>
+                        TEL: 03-XXXX-XXXX
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Menu</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="service.html">サービス・料金</a></li>
+                        <li><a href="about.html">事務所紹介</a></li>
+                        <li><a href="voice.html">お客様の声</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+                    <p style="margin-bottom: 1rem; font-size: 0.9rem;">平日 9:00〜18:00（土曜相談可）</p>
+                    <a href="contact.html" class="btn btn-primary"
+                        style="padding: 10px 24px; font-size: 0.9rem;">無料相談のお申し込み</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aoba Tax Office. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

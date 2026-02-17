@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あおば税理士事務所 | 経営者に寄り添う、新宿の税理士</title>
+    <meta name="description" content="新宿のあおば税理士事務所は、従業員5名以下の小規模法人の社長・起業家を専門にサポート。顧問料月額3万円〜。初回相談無料。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Top Page Specific Styles */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(27, 58, 92, 0.85), rgba(27, 58, 92, 0.7)), url('https://placehold.co/1920x1080/1B3A5C/FFFFFF?text=Office+Landscape');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 180px 0 120px;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        .hero-cta {
+            background-color: var(--color-accent);
+            color: white;
+            font-size: 1.2rem;
+            padding: 18px 40px;
+        }
+        
+        .hero-cta:hover {
+            background-color: var(--color-accent-light);
+        }
+
+        .problem-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            height: 100%;
+            transition: var(--transition);
+        }
+        
+        .problem-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .reason-box {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            align-items: flex-start;
+        }
+
+        .reason-icon {
+            font-size: 3rem;
+            color: var(--color-accent);
+            flex-shrink: 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            font-family: var(--font-serif);
+        }
+
+        .cta-section {
+            background: var(--color-main);
+            color: white;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2rem; }
+            .reason-box { flex-direction: column; text-align: center; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container container">
+            <a href="index.html" class="logo">
+                <i class="ph ph-plant" style="color: var(--color-accent); font-size: 1.8rem;"></i>
+                あおば税理士事務所
+            </a>
+            
+            <button class="menu-toggle" aria-label="メニューを開く">
+                <i class="ph ph-list"></i>
+            </button>
+
+            <nav class="nav-menu">
+                <ul style="display: flex; gap: 30px; align-items: center;">
+                    <li><a href="index.html" class="nav-link">ホーム</a></li>
+                    <li><a href="service.html" class="nav-link">サービス・料金</a></li>
+                    <li><a href="about.html" class="nav-link">事務所紹介</a></li>
+                    <li><a href="voice.html" class="nav-link">お客様の声</a></li>
+                    <li><a href="contact.html" class="nav-link">お問い合わせ</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">無料相談はこちら</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container fade-in-up">
+                <h1 class="hero-title">ひとりで抱えていませんか？<br>経営のお金の悩み。</h1>
+                <p class="hero-subtitle">顧問先340社以上の実績。経営者に寄り添い、<br>税務だけでなくお金の不安をまるごと解決します。</p>
+                <div style="margin-bottom: 2rem;">
+                    <a href="contact.html" class="btn btn-primary hero-cta">まずは無料で相談する <i class="ph ph-arrow-right" style="margin-left: 8px;"></i></a>
+                </div>
+                <p style="font-size: 0.9rem; opacity: 0.8;">初回相談無料 / オンライン対応可 / 土曜相談OK</p>
+            </div>
+        </section>
+
+        <!-- Problems Section -->
+        <section class="section section-bg">
+            <div class="container">
+                <div class="text-center fade-in-up">
+                    <span class="section-subtitle">PROBLEMS</span>
+                    <h2 class="section-title">こんなお悩みありませんか？</h2>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 3rem;">
+                    <!-- Problem 1 -->
+                    <div class="problem-card fade-in-up">
+                        <i class="ph ph-trend-down" style="font-size: 3rem; color: var(--color-main); margin-bottom: 1rem;"></i>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">税金への不安</h3>
+                        <p>税金ばかり取られて、何のために働いているのか分からない。もっと手元にお金を残したい。</p>
+                    </div>
+                    <!-- Problem 2 -->
+                    <div class="problem-card fade-in-up">
+                        <i class="ph ph-files" style="font-size: 3rem; color: var(--color-main); margin-bottom: 1rem;"></i>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">事務作業の負担</h3>
+                        <p>帳簿や確定申告、何から手をつければいいか分からない。本業に集中する時間がない。</p>
+                    </div>
+                    <!-- Problem 3 -->
+                    <div class="problem-card fade-in-up">
+                        <i class="ph ph-chat-slash" style="font-size: 3rem; color: var(--color-main); margin-bottom: 1rem;"></i>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">相談しづらい</h3>
+                        <p>今の税理士に質問しても、返事が来るまで何日もかかる。専門用語ばかりで分かりにくい。</p>
+                    </div>
+                    <!-- Problem 4 -->
+                    <div class="problem-card fade-in-up">
+                        <i class="ph ph-rocket" style="font-size: 3rem; color: var(--color-main); margin-bottom: 1rem;"></i>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">起業への不安</h3>
+                        <p>起業したいけど、資金調達や手続きなど、お金まわりのことが不安で踏み出せない。</p>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 3rem;">
+                    <p style="font-size: 1.2rem; margin-bottom: 1.5rem; font-weight: 700;">そのお悩み、あおば税理士事務所が解決します。</p>
+                    <a href="contact.html" class="btn btn-main">無料相談を申し込む</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reasons Section -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center fade-in-up">
+                    <span class="section-subtitle">WHY CHOOSE US</span>
+                    <h2 class="section-title">選ばれる3つの理由</h2>
+                </div>
+
+                <div style="margin-top: 3rem;">
+                    <!-- Reason 1 -->
+                    <div class="reason-box fade-in-up">
+                        <div class="reason-icon">
+                            <i class="ph ph-lightning"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">1. ご質問には即日対応。お待たせしません。</h3>
+                            <p>経営のスピードを止めないために、「早さ」は正義だと考えています。すぐにお答えできない場合でも、「○日までに回答します」と必ずお伝えします。いつ返事が来るか分からないストレスを感じさせません。</p>
+                        </div>
+                    </div>
+
+                    <!-- Reason 2 -->
+                    <div class="reason-box fade-in-up">
+                        <div class="reason-icon">
+                            <i class="ph ph-handshake"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">2. お客様の意向を第一に。押しつけない提案。</h3>
+                            <p>税務の正解はひとつではありません。とにかく節税したいのか、融資のために利益を出したいのか。お客様の経営方針や価値観を丁寧にお聞きし、最善の選択肢を一緒に考えます。</p>
+                        </div>
+                    </div>
+
+                    <!-- Reason 3 -->
+                    <div class="reason-box fade-in-up">
+                        <div class="reason-icon">
+                            <i class="ph ph-piggy-bank"></i>
+                        </div>
+                        <div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">3. 起業1年目は顧問料半額。はじめの一歩を応援。</h3>
+                            <p>起業直後は資金に余裕がないもの。初年度は顧問料を半額でサポートし、事業が軌道に乗るまでしっかり伴走します。創業融資のサポートもお任せください。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section section-bg">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="fade-in-up">
+                        <div class="stat-number" data-target="120">0</div>
+                        <p>顧問先法人数(社)</p>
+                    </div>
+                    <div class="fade-in-up">
+                        <div class="stat-number" data-target="220">0</div>
+                        <p>個人事業主サポート(名)</p>
+                    </div>
+                    <div class="fade-in-up">
+                        <div class="stat-number" data-target="18">0</div>
+                        <p>開業からの年数(年)</p>
+                    </div>
+                    <div class="fade-in-up">
+                        <p style="font-size: 2.5rem; font-family: var(--font-serif); color: var(--color-accent); font-weight: 700;">95<span style="font-size: 1.5rem">%</span></p>
+                        <p>顧問契約継続率</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Voice Teaser -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center fade-in-up">
+                    <span class="section-subtitle">VOICE</span>
+                    <h2 class="section-title">お客様の声</h2>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 2rem;">
+                    <div class="problem-card fade-in-up" style="text-align: left;">
+                        <div style="color: var(--color-accent); margin-bottom: 0.5rem;">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <h4 style="margin-bottom: 0.5rem;">IT系 1人社長・法人顧問</h4>
+                        <p style="font-size: 0.95rem;">「以前の税理士はメールの返信に3日かかることもあり、不安でした。青葉先生はいつも即日で返してくれるので、安心して本業に集中できています。」</p>
+                    </div>
+                    <div class="problem-card fade-in-up" style="text-align: left;">
+                        <div style="color: var(--color-accent); margin-bottom: 0.5rem;">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <h4 style="margin-bottom: 0.5rem;">建設業・会社設立サポート</h4>
+                        <p style="font-size: 0.95rem;">「独立するとき、会社の作り方すら分からなかった自分に、設立から届出まで全部やってくれました。開業後もそのまま顧問をお願いしています。」</p>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 2rem;">
+                    <a href="voice.html" class="btn btn-secondary">お客様の声をもっと見る</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Startup Support -->
+        <section class="section" style="background-color: aliceblue;">
+            <div class="container">
+                <div style="background: white; padding: 3rem; border-radius: var(--radius-lg); border-left: 5px solid var(--color-accent); box-shadow: var(--shadow-md);" class="fade-in-up">
+                    <div class="text-center">
+                        <h2 style="font-size: 2rem; margin-bottom: 1rem;">これから起業するあなたへ</h2>
+                        <p style="margin-bottom: 2rem;">起業の不安は、ひとりで抱えなくて大丈夫です。<br>開業届の出し方から資金計画、節税対策まで、何でもご相談ください。<br><strong>初年度は顧問料半額</strong>でサポートします。</p>
+                        <a href="contact.html" class="btn btn-primary">起業の相談をする（無料）</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="logo" style="color: white; margin-bottom: 1rem;">
+                        <i class="ph ph-plant" style="font-size: 1.5rem; color: var(--color-accent);"></i>
+                        あおば税理士事務所
+                    </div>
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1rem;">
+                        〒173-0000<br>
+                        東京都新宿区○○1-2-3 ○○ビル2F<br>
+                        TEL: 03-XXXX-XXXX
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Menu</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="service.html">サービス・料金</a></li>
+                        <li><a href="about.html">事務所紹介</a></li>
+                        <li><a href="voice.html">お客様の声</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+                    <p style="margin-bottom: 1rem; font-size: 0.9rem;">平日 9:00〜18:00（土曜相談可）</p>
+                    <a href="contact.html" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.9rem;">無料相談のお申し込み</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aoba Tax Office. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
