@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログ・お知らせ | あおば税理士事務所</title>
+    <meta name="description" content="あおば税理士事務所のブログ・お知らせ一覧。税務や経営に関する役立つ情報、事務所からのニュースを発信しています。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Page Specific Style -->
+    <style>
+        .page-header {
+            background-color: var(--color-main);
+            color: white;
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--color-border);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-meta {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .blog-title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+            font-weight: 700;
+        }
+
+        .blog-excerpt {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .blog-link {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: auto;
+        }
+
+        .blog-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container container">
+            <a href="index.html" class="logo">
+                <i class="ph ph-plant" style="color: var(--color-accent); font-size: 1.8rem;"></i>
+                あおば税理士事務所
+            </a>
+
+            <button class="menu-toggle" aria-label="メニューを開く">
+                <i class="ph ph-list"></i>
+            </button>
+
+            <nav class="nav-menu">
+                <ul style="display: flex; gap: 20px; align-items: center;">
+                    <li><a href="index.html" class="nav-link">ホーム</a></li>
+                    <li><a href="service.html" class="nav-link">サービス・料金</a></li>
+                    <li><a href="about.html" class="nav-link">事務所紹介</a></li>
+                    <li><a href="voice.html" class="nav-link">お客様の声</a></li>
+                    <li><a href="blog.html" class="nav-link active" style="color: var(--color-accent);">ブログ</a></li>
+                    <li><a href="contact.html" class="nav-link">お問い合わせ</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary"
+                    style="font-size: 0.9rem; padding: 10px 20px;">無料相談はこちら</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <header class="page-header">
+            <div class="container fade-in-up">
+                <h1 class="section-title" style="color: white; margin-bottom: 1rem;">Blog</h1>
+                <p>ブログ・お知らせ</p>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="container">
+                <div class="blog-grid fade-in-up">
+                    <!-- Article 1 -->
+                    <article class="blog-card">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <i class="ph ph-calendar-blank"></i>
+                                2024.02.15
+                            </div>
+                            <h3 class="blog-title">インボイス制度導入に向けた準備について</h3>
+                            <p class="blog-excerpt">2023年10月から開始されたインボイス制度。まだ対応がお済みでない事業者様向けに、登録のポイントや注意点を分かりやすく解説します。
+                            </p>
+                            <a href="blog/post-1.html" class="blog-link">
+                                記事を読む <i class="ph ph-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="blog-card">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <i class="ph ph-calendar-blank"></i>
+                                2024.01.20
+                            </div>
+                            <h3 class="blog-title">個人事業主が法人化する目安とは？メリット・デメリットを解説</h3>
+                            <p class="blog-excerpt">「そろそろ法人化すべき？」とお悩みの個人事業主様へ。売上や利益の目安、税金・社会保険の違いなど、判断材料となるポイントをご紹介します。
+                            </p>
+                            <a href="blog/post-2.html" class="blog-link">
+                                記事を読む <i class="ph ph-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="blog-card">
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <i class="ph ph-calendar-blank"></i>
+                                2023.12.10
+                            </div>
+                            <h3 class="blog-title">【事例紹介】創業融資を成功させるポイント</h3>
+                            <p class="blog-excerpt">創業時の資金調達は事業成功の鍵を握ります。日本政策金融公庫の融資を例に、審査で見られるポイントや事業計画書の書き方について解説します。
+                            </p>
+                            <a href="blog/post-3.html" class="blog-link">
+                                記事を読む <i class="ph ph-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="logo" style="color: white; margin-bottom: 1rem;">
+                        <i class="ph ph-plant" style="font-size: 1.5rem; color: var(--color-accent);"></i>
+                        あおば税理士事務所
+                    </div>
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1rem;">
+                        〒160-0000<br>
+                        東京都新宿区○○1-2-3 ○○ビル2F<br>
+                        TEL: 03-XXXX-XXXX
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Menu</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="service.html">サービス・料金</a></li>
+                        <li><a href="about.html">事務所紹介</a></li>
+                        <li><a href="voice.html">お客様の声</a></li>
+                        <li><a href="blog.html">ブログ</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact</h4>
+                    <p style="margin-bottom: 1rem; font-size: 0.9rem;">平日 9:00〜18:00（土曜相談可）</p>
+                    <a href="contact.html" class="btn btn-primary"
+                        style="padding: 10px 24px; font-size: 0.9rem;">無料相談のお申し込み</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aoba Tax Office. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

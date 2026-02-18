@@ -122,14 +122,16 @@
             </button>
 
             <nav class="nav-menu">
-                <ul style="display: flex; gap: 30px; align-items: center;">
+                <ul style="display: flex; gap: 20px; align-items: center;">
                     <li><a href="index.html" class="nav-link">ホーム</a></li>
                     <li><a href="service.html" class="nav-link">サービス・料金</a></li>
                     <li><a href="about.html" class="nav-link active" style="color: var(--color-accent);">事務所紹介</a></li>
                     <li><a href="voice.html" class="nav-link">お客様の声</a></li>
+                    <li><a href="blog.html" class="nav-link">ブログ</a></li>
                     <li><a href="contact.html" class="nav-link">お問い合わせ</a></li>
                 </ul>
-                <a href="contact.html" class="btn btn-primary">無料相談はこちら</a>
+                <a href="contact.html" class="btn btn-primary"
+                    style="font-size: 0.9rem; padding: 10px 20px;">無料相談はこちら</a>
             </nav>
         </div>
     </header>
@@ -146,14 +148,14 @@
         <section class="section">
             <div class="container">
                 <div class="profile-section fade-in-up">
-                    <img src="https://placehold.co/400x400/1B3A5C/FFFFFF?text=Portrait" alt="代表税理士 青葉 誠一"
-                        class="profile-image">
+                    <img src="./images/profile.webp?v=1" alt="代表税理士 青葉 誠一" class="profile-image">
                     <div>
                         <span
                             style="display: block; font-size: 1.1rem; color: var(--color-accent); margin-bottom: 0.5rem; font-weight: 700;">代表税理士</span>
                         <h2 style="font-size: 2.2rem; margin-bottom: 1.5rem; font-family: var(--font-serif);">青葉 誠一
                             <span style="font-size: 1.2rem; font-weight: 400; font-family: var(--font-sans);">（あおば
-                                せいいち）</span></h2>
+                                せいいち）</span>
+                        </h2>
                         <p style="margin-bottom: 1.5rem; line-height: 1.8;">
                             1980年生まれ、東京都出身。<br>
                             大学卒業後、都内税理士法人で10年間、上場企業の税務申告から個人の相続まで幅広く担当。<br>
@@ -211,7 +213,7 @@
                         </tr>
                         <tr>
                             <th>所在地</th>
-                            <td>〒173-0000 東京都新宿区○○1-2-3 ○○ビル2F</td>
+                            <td>〒160-0000 東京都新宿区○○1-2-3 ○○ビル2F</td>
                         </tr>
                         <tr>
                             <th>代表者</th>
@@ -237,13 +239,12 @@
                 </div>
 
                 <!-- Map -->
-                <div style="margin-top: 4rem; height: 400px; background-color: #ddd; display: flex; align-items: center; justify-content: center; color: #666; border-radius: var(--radius-md);"
+                <div style="margin-top: 4rem; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-md);"
                     class="fade-in-up">
-                    <div style="text-align: center;">
-                        <i class="ph ph-map-pin" style="font-size: 3rem; margin-bottom: 1rem;"></i>
-                        <p>Google Maps Area</p>
-                        <p style="font-size: 0.9rem;">JR新宿駅 西口より徒歩5分</p>
-                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12961.897549103449!2d139.68131146046179!3d35.68994211134735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd4cfbaff57%3A0x12385d2a418fd33d!2z44CSMTYwLTAwMjMg5p2x5Lqs6YO95paw5a6_5Yy66KW_5paw5a6_!5e0!3m2!1sja!2sjp!4v1771394182964!5m2!1sja!2sjp"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
@@ -260,7 +261,7 @@
                         あおば税理士事務所
                     </div>
                     <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1rem;">
-                        〒173-0000<br>
+                        〒160-0000<br>
                         東京都新宿区○○1-2-3 ○○ビル2F<br>
                         TEL: 03-XXXX-XXXX
                     </p>

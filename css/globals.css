@@ -17,19 +17,19 @@
   /* Typography */
   --font-serif: 'Noto Serif JP', serif;
   --font-sans: 'Noto Sans JP', sans-serif;
-  
+
   /* Spacing */
   --container-width: 1200px;
   --header-height: 80px;
   --section-padding: 80px 0;
-  
+
   /* Utilities */
-  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 16px;
-  
+
   /* Animation */
   --transition: all 0.3s ease;
 }
@@ -49,7 +49,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
   line-height: 1.4;
   font-weight: 700;
@@ -62,7 +67,8 @@ a {
   transition: var(--transition);
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -89,9 +95,17 @@ img {
 }
 
 /* Typography Utilities */
-.text-center { text-align: center; }
-.text-accent { color: var(--color-accent); }
-.fw-bold { font-weight: 700; }
+.text-center {
+  text-align: center;
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.fw-bold {
+  font-weight: 700;
+}
 
 /* Components */
 
@@ -100,7 +114,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 32px;
+  padding: 10px 24px;
   font-weight: 700;
   font-size: 1rem;
   border-radius: 50px;
@@ -134,13 +148,14 @@ img {
 }
 
 .btn-main {
-    background-color: var(--color-main);
-    color: var(--color-white);
+  background-color: var(--color-main);
+  color: var(--color-white);
 }
+
 .btn-main:hover {
-    background-color: var(--color-main-light);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+  background-color: var(--color-main-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 /* Section Headings */
@@ -155,7 +170,8 @@ img {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 50%; /* Center alignment by default */
+  left: 50%;
+  /* Center alignment by default */
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
@@ -174,7 +190,9 @@ img {
 
 
 /* Form Elements */
-input, textarea, select {
+input,
+textarea,
+select {
   width: 100%;
   padding: 12px 16px;
   border: 1px solid var(--color-border);
@@ -185,7 +203,9 @@ input, textarea, select {
   transition: var(--transition);
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
   border-color: var(--color-main);
   box-shadow: 0 0 0 3px rgba(27, 58, 92, 0.1);
@@ -211,12 +231,12 @@ input:focus, textarea:focus, select:focus {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 5%;
+  padding: 0 1rem;
 }
 
 .logo {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--color-main);
   display: flex;
@@ -226,7 +246,7 @@ input:focus, textarea:focus, select:focus {
 
 .nav-menu {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -234,6 +254,8 @@ input:focus, textarea:focus, select:focus {
   font-weight: 500;
   color: var(--color-main);
   position: relative;
+  font-size: 0.9rem;
+  /* Reduced font size */
 }
 
 .nav-link::after {
@@ -253,12 +275,12 @@ input:focus, textarea:focus, select:focus {
 
 /* Mobile Menu Toggle */
 .menu-toggle {
-    display: none;
-    font-size: 1.5rem;
-    color: var(--color-main);
-    background: none;
-    border: none;
-    cursor: pointer;
+  display: none;
+  font-size: 1.5rem;
+  color: var(--color-main);
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -291,7 +313,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 20px;
   text-align: center;
   font-size: 0.9rem;
@@ -299,15 +321,43 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+/* Responsive */
+@media (max-width: 1024px) {
   :root {
     --header-height: 60px;
     --section-padding: 60px 0;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
   .section-title {
     font-size: 2rem;
   }
+
+  .header-container {
+    position: relative;
+  }
+
+  /* Hamburger menu on left */
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    font-size: 1.8rem;
+    order: -1;
+    z-index: 1001;
+    /* Above mobile menu */
+  }
+
+  /* Center Logo on Mobile if desired, or keep right. 
+     Since toggle is order -1, logo is order 0. 
+     With space-between: [Toggle] ....... [Logo]
+  */
+
 
   .nav-menu {
     position: fixed;
@@ -317,29 +367,44 @@ input:focus, textarea:focus, select:focus {
     height: calc(100vh - var(--header-height));
     background-color: var(--color-white);
     flex-direction: column;
-    justify-content: center;
-    transform: translateX(100%);
+    justify-content: flex-start;
+    /* Align top */
+    padding-top: 60px;
+    transform: translateX(-100%);
+    /* Slide from left */
     transition: transform 0.3s ease;
     padding: 20px;
+    overflow-y: auto;
   }
 
   .nav-menu.active {
     transform: translateX(0);
+    box-shadow: var(--shadow-md);
   }
 
-  .menu-toggle {
-    display: block;
+  .nav-link {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-menu .btn {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 280px;
+    padding: 16px 0;
   }
 }
 
 /* Animations */
 .fade-in-up {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .fade-in-up.visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
