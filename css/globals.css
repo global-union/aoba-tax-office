@@ -250,6 +250,12 @@ select:focus {
   align-items: center;
 }
 
+.nav-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 .nav-link {
   font-weight: 500;
   color: var(--color-main);
@@ -382,9 +388,20 @@ select:focus {
     box-shadow: var(--shadow-md);
   }
 
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    /* Center items horizontally if desired */
+    /* Or align-items: stretch if you want full width clickable areas */
+    justify-content: flex-start;
+  }
+
   .nav-link {
     font-size: 1.2rem;
     width: 100%;
+    display: block;
+    /* Ensure width applies */
     text-align: center;
     padding: 10px 0;
   }

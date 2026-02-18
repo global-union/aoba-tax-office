@@ -21,7 +21,7 @@
         /* Top Page Specific Styles */
         .hero {
             position: relative;
-            background: linear-gradient(rgba(27, 58, 92, 0.85), rgba(27, 58, 92, 0.7)), url('./images/hero-bg.webp?v=1');
+            background: linear-gradient(rgba(27, 58, 92, 0.6), rgba(27, 58, 92, 0.45)), url('./images/hero-bg.webp?v=1');
             background-size: cover;
             background-position: center;
             color: white;
@@ -109,6 +109,13 @@
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
+            .hero {
+                background: linear-gradient(rgba(27, 58, 92, 0.6), rgba(27, 58, 92, 0.45)), url('./images/hero-bg-mobile.webp?v=2');
+                background-size: cover;
+                background-position: center;
+                padding: 120px 0 80px;
+            }
+
             .hero-title {
                 font-size: 2rem;
             }
@@ -137,7 +144,7 @@
             </button>
 
             <nav class="nav-menu">
-                <ul style="display: flex; gap: 20px; align-items: center;">
+                <ul class="nav-list">
                     <li><a href="index.html" class="nav-link active">ホーム</a></li>
                     <li><a href="service.html" class="nav-link">サービス・料金</a></li>
                     <li><a href="about.html" class="nav-link">事務所紹介</a></li>
